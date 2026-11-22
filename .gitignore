@@ -1,0 +1,34 @@
+# gradle
+.gradle/
+build/
+out/
+classes/
+
+# ide
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# fabric dev runs
+run/
+
+# internal documentation and agent notes: never published
+internal/
+CLAUDE.md
+
+# local test server: keep only the start script
+# (server.properties is excluded on purpose: it holds the event seed)
+server/*
+!server/start.bat
+
+# java
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr

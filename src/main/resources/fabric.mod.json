@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "zhbh",
+	"version": "${version}",
+	"name": "ZHBH",
+	"description": "Team advancements event: shared team progress and ability locks on top of BlazeandCave's Advancements Pack.",
+	"authors": [],
+	"license": "All-Rights-Reserved",
+	"icon": "assets/zhbh/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"zhbh.ZhbhMod"
+		],
+		"client": [
+			"zhbh.client.ZhbhClient"
+		]
+	},
+	"mixins": [
+		"zhbh.mixins.json",
+		{
+			"config": "zhbh.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
